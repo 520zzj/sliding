@@ -2,6 +2,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+//引入vue-touch
+import vueTouch from "vue-touch"
+Vue.use(vueTouch)
+vueTouch.config.swipe={
+  threshold:50//设置滑动距离
+}
+
 //引入vuex
 import Vuex from "vuex"
 Vue.use(Vuex)
