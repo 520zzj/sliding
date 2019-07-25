@@ -9,9 +9,9 @@
         </ul>
         <div class="swipe">
             <transition :name="direction">
-                <keep-alive>
+               <!-- <keep-alive>-->
                     <router-view class=".router-view" key="index" v-if="$route.meta.keepAlive"></router-view>        
-                </keep-alive>
+              <!--  </keep-alive>-->
             </transition>
         </div>
      
